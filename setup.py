@@ -90,14 +90,14 @@ from setuptools import find_packages, setup
 # 2. once modified, run: `make deps_table_update` to update src/diffusers/dependency_versions_table.py
 _deps = [
     "Pillow",  # keep the PIL.Image.Resampling deprecation away
-    "accelerate>=0.11.0",
+    "accelerate",
     "compel==0.1.8",
     "black~=23.1",
     "datasets",
     "filelock",
     "flax>=0.4.1",
     "hf-doc-builder>=0.3.0",
-    "huggingface-hub>=0.13.2",
+    "huggingface-hub==0.23.4",
     "requests-mock==1.10.0",
     "importlib_metadata",
     "invisible-watermark>=0.2.0",
@@ -126,8 +126,9 @@ _deps = [
     "tensorboard",
     "torch>=1.4",
     "torchvision",
-    "transformers>=4.25.1",
+    "transformers==4.41.2",
     "urllib3<=2.0.0",
+    "bitsandbytes==0.43.1",
 ]
 
 # this is a lookup table with items like:
